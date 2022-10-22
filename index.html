@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+  <script src="https://kit.fontawesome.com/530804ecd9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!----------------- navbar ---------------------------->
+  <div id="header">
+    <div class="container1">
+      <nav>
+        <ul id="sidemenu">
+          <li><a href="about">About Me</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#myportfolio">portfolio</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <a href="Resume_.pdf"><button class="cvbtn" type="button">Download CV</button></a>
+          <i class="fas fa-solid fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class=" fas fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="main">
+        <div>
+        <h1>Hi,<span> I'm Anant Maheshwari</h1>
+        <p>Software Engineer</p>
+      </div>  
+        <img  class = "myphoto" src="images/profile.png" >
+      </div>
+    </div>
+  </div>
+  <!----------------about ------------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col1"><img class="photo2" src="images/profile.png"> </div>
+        <div class="col2">
+          <h2 class="subtitle">About Us</h2>
+          <p>An engineering graduate who is seeking to find the opportunity to work in a fun and challenging working
+            environment that will encourage him to improve and learn new and necessary skills as well as be motivated by
+            the
+            company to do his for the sake of helping himself and the company advancement in the IT industry.
+          </p>
+          <div class="tab-title">
+            <p class="tab-links active-link" onclick="ontab('skills')">Skills</p>
+            <p class="tab-links" onclick="ontab('experience')">Experience</p>
+            <p class="tab-links" onclick="ontab('education')">Education</p>
+          </div>
+          <div class="tab-content active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX Design</span><br>Design web/App Interface</li>
+              <li><span>Web Developer</span><br>Web/App Development</li>
+              <li><span>Digital Marketing</span><br>Social Media Marketing</li>
+            </ul>
+          </div>
+          <div class="tab-content" id="experience">
+            <ul>
+              <li><span>2021-2022</span><br>UI/UX Design Executive at OSKP Institute</li>
+              <li><span>2021</span><br>Internship at Streato</li>
+              <li><span>2021</span><br>Social Media Marketing</li>
+            </ul>
+          </div>
+          <div class="tab-content" id="education">
+            <ul>
+              <li><span>2022</span><br>B.Tech from GTBIT, New Delhi</li>
+              <li><span>2019</span><br>Diploma from CRRIT, New Delhi</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---------- services ------------->
+  <div id="services">
+    <div class="container">
+      <h2 class="subtitle">MyServices</h2>
+      <div class="serviceslist">
+        <div>
+          <i class="fa-sharp fa-solid fa-code"></i>
+
+          <h3>web Design</h3>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam illo aperiam deserunt.</p>
+          <a href="\">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-uikit"></i>
+          <h3>UI/UX Designing</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam illo aperiam deserunt.</p>
+          <a href="\">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-sharp fa-solid fa-ranking-star"></i>
+          <h3>Digital Marketing</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam illo aperiam deserunt.</p>
+          <a href="\">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ------------------------portfolio --------------------->
+  <div id="myportfolio">
+    <div class="container">
+      <h2 class="subtitle">My Work</h2>
+      <div class="worklist">
+        <div class="work">
+          <img src="images/web.jpg">
+          <div class="layer">
+            <h3>Web Music app</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa neque velit, quidem corporis voluptate
+              earum et!</p>
+            <a> <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="images/social.png">
+          <div class="layer">
+            <h3>Web Music app</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa neque velit, quidem corporis voluptate
+              earum et!</p>
+            <a> <i class="fa-sharp fa-solid fa-link"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="images/app.png">
+          <div class="layer">
+            <h3>Web Music app</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa neque velit, quidem corporis voluptate
+              earum et!</p>
+            <a><i class="fa-sharp fa-solid fa-up-right-from-square"></i></i></a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <a href="" class="work-btn">See more</a>
+  </div>
+  </div>
+  <!--------------------- contact ------------------------------>
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contactleft">
+          <h2 class="contact-title">Contact me</h2>
+          <p><a href="mailto:mahehswari.anant2@gmail.com"><i
+                class="fa-sharp fa-solid fa-paper-plane"></i>mahehswari.anant2@gmail.com</a></p>
+          <p> <a href=“tel:+919871429783”><i class="fa-sharp fa-solid fa-phone"></i>+91 9871429783</a></p>
+
+          <div class="social-icons">
+            <a><i class="fa-brands fa-linkedin"></i></i></a>
+            <a><i class="fa-brands fa-square-instagram"></i></a>
+            <a><i class="fa-brands fa-square-facebook"></i></a>
+          </div>
+
+        </div>
+        <div class="contactright">
+          <form Name="submit-to-google-sheet"
+            action="https://script.google.com/macros/s/AKfycbxfSGFcwvyYnwwzSahNMtb9yM436UA5m7CHST7eO0ZuJaWelgqYsBy9UP848sANfP4l/exec">
+            <label>Name</label>
+            <input type="text" name="Name" placeholder=" Your Name" required>
+            <label>Email ID</label>
+            <input type="email" name="Email" placeholder=" Your Email" required>
+            <p><label>Comment </label></p>
+            <textarea name="Message" row="6" placeholder="Your Comment"></textarea>
+            <input type="submit" name="Submit" class="cvbtn">
+          </form>
+          <span id="success"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright RootInThinker. Made by <i class="fa-brands fa-superpowers"></i></p>
+    </div>
+  </div>
+
+
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
