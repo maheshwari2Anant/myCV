@@ -130,10 +130,11 @@ nav ul li a:hover::after{
   justify-content: space-around;
   flex: wrap;
   margin: 0 50px;
+  flex-direction: row;
 }
 
 .col1 {
-  flex-basis: 35%;
+  flex-basis: max(35%, 400px);
 }
 
 .col1 img {
@@ -473,14 +474,15 @@ nav .fas {
   }
 
   .subtitle {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .col1 {
-    flex-basis: 10%;
+    flex-basis: max(100%, 400px);
   }
   .col2 {
-    flex-basis: 100%;
+    /* flex-basis: 100%; */
+    flex-basis: 35%;
   }
 
   .tab-links {
@@ -500,5 +502,13 @@ nav .fas {
     margin: 10px;
     display: inline-block;
   }
-}
 
+  .row {
+    flex-direction: column;
+  }
+
+  .contact-title{
+    font-size:35px;
+
+  }
+}
